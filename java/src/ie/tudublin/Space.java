@@ -24,21 +24,6 @@ this.width = width;
 }
     
 
-public void create(){
-
-ui.fill (x,y);
-ui.rect(x,x,width, height);
-ui.fill(255);
-ui.noStroke();
-ui.ellipse(ui.random(width), ui.random(height),2,2);
-
-
-
-
-}
-
-
-
 
 
 
