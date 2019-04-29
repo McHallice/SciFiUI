@@ -10,13 +10,15 @@ public class Radar
     private float frequency;
     private UI ui;
     private float theta = 0;
+    private float width;
 
-    public Radar(UI ui, float frequency, float x, float y, float radius)
+    public Radar(UI ui, float frequency, float x, float y, float radius, float width)
     {
         this.ui = ui;
         this.frequency = frequency;
         pos = new PVector(x, y);
         this.radius = radius;
+        this.width = width;
     }
 
     public void render()

@@ -35,7 +35,7 @@ public class UI extends PApplet
     public void setup()
     {
        
-        radar = new Radar(this, 1, width / 2, height / 2, 100);
+        radar = new Radar(this, 1, 1100,600, 100,width);
         s = new Space(this,0, 2, width, height);
     }
 
@@ -43,7 +43,7 @@ public class UI extends PApplet
 
     public void draw()
     {
-        
+        s.create();
         radar.update();
         radar.render();
 
