@@ -33,7 +33,10 @@ public class Radar
         ui.popMatrix();
         */
 
-        ui.noFill();
+        ui.fill(105,105,105);
+        ui.rect(0,475, width,800);
+        ui.stroke(0,255,0);
+        ui.fill(0,0,0);
         ui.ellipse(pos.x, pos.y, radius * 2, radius * 2);
         float x2 = pos.x + (float) Math.sin(theta) * radius;
         float y2 = pos.y - (float) Math.cos(theta) * radius;
