@@ -7,6 +7,14 @@ public class UI extends PApplet
     
     Space s;
     Crosshair ch;
+     float move = 500;
+     float move2 = 750;
+     float move3 = 200;
+     float move4 = 400;
+     float move5 = 525;
+     float move6 = 725;
+     float speed = 5;
+    
 
     boolean[] keys = new boolean[1024];
 
@@ -38,9 +46,11 @@ public class UI extends PApplet
         
         radar = new Radar(this, 1, 1100,600, 100,width);
         s = new Space(this,0, 5, width, height);
-        ch = new Crosshair(this);
+        ch = new Crosshair(this,move,move2,move3,move4,move5,move6);
+        
     
     }
+    
 
     Radar radar;
 
@@ -50,6 +60,7 @@ public class UI extends PApplet
         radar.render();
 
         ch.render();
+        
 
 
         
@@ -59,7 +70,23 @@ public class UI extends PApplet
        
         if (checkKey(LEFT))
         {
-            System.out.println("Left arrow key pressed");
+           move -= speed;
+           move2 -= speed;
+           move3 -= speed;
+           move4 -= speed;
+           move5 -= speed;
+           move6 -= speed;
+
+        }
+        if (checkKey(RIGHT))
+        {
+           move -= speed;
+           move2 -= speed;
+           move3 -= speed;
+           move4 -= speed;
+           move5 -= speed;
+           move6 -= speed;
+
         }
     }
 }

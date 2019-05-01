@@ -4,25 +4,41 @@ import processing.core.PApplet;
 
 
 
-public class Crosshair{
+public class Crosshair extends PApplet{
 
     private UI ui;
+    private float move;
+    private float move2;
+    private float move3;
+    private float move4;
+    private float move5;
+    private float move6;
+    
 
-    public Crosshair(UI ui)
+    public Crosshair(UI ui, float move, float move2, float move3, float move4, float move5, float move6)
     {
         this.ui = ui;
+        this.move = move;
+        this.move2 = move2;
+        this.move3 = move3;
+        this.move4 = move4;
+        this.move5 = move5;
+        this.move6 = move6;
+
         
         
     }
 
+
+
 public void render(){
         ui.stroke(255,255,255);
-        ui.line(500,200,500,400);
-        ui.line(750,200,750,400);
-        ui.line(500,200,525,200);
-        ui.line(500,400,525,400);
-        ui.line(750,200,725,200);
-        ui.line(750,400,725,400);
+        ui.line(move,move3,move,move4);
+        ui.line(move2,move3,move2,move4);
+        ui.line(move,move3,move5,move3);
+        ui.line(move,move4,move5,move4);
+        ui.line(move2,move3,move6,move3);
+        ui.line(move2,move4,move6,move4);
         ui.noFill();
         ui.ellipse(625,300,25,25);
         ui.textSize(32);
@@ -48,4 +64,13 @@ public void render(){
 
 
 
+
+
+
 }
+
+
+
+
+
+
