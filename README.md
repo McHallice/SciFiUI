@@ -16,7 +16,7 @@ Used different classes for the crosshair, button, radar and space which were con
 
 This is a youtube video of my project:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=O0GZdRceZRs&feature=youtu.be)
 
 
 
