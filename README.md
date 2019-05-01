@@ -4,8 +4,6 @@ Name:Ciara McHale
 
 Student Number: C16486904
 
-Fork this repository and use it a starter project for your assignment
-
 # Description of the assignment
 Suppose to be a view from a cockpit in a spaceship where you could shoot and move your crosshair
 
