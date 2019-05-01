@@ -72,20 +72,32 @@ public class UI extends PApplet
         {
            move -= speed;
            move2 -= speed;
-           move3 -= speed;
-           move4 -= speed;
            move5 -= speed;
            move6 -= speed;
 
         }
         if (checkKey(RIGHT))
         {
-           move -= speed;
-           move2 -= speed;
+           move += speed;
+           move2 += speed;
+           move5 += speed;
+           move6 += speed;
+
+        }
+        if (checkKey(UP))
+        {
+           
            move3 -= speed;
            move4 -= speed;
-           move5 -= speed;
-           move6 -= speed;
+
+        }
+        if (checkKey(DOWN))
+        {
+           
+
+           move2 += speed;
+           move3 += speed;
+           
 
         }
     }
