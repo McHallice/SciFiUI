@@ -11,7 +11,11 @@ public class Radar
     private UI ui;
     private float theta = 0;
     private float width;
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> de7e8069b669c806897000ef5780b728090c9d9f
     public Radar(UI ui, float frequency, float x, float y, float radius, float width)
     {
         this.ui = ui;
@@ -19,7 +23,10 @@ public class Radar
         pos = new PVector(x, y);
         this.radius = radius;
         this.width = width;
+<<<<<<< HEAD
         
+=======
+>>>>>>> de7e8069b669c806897000ef5780b728090c9d9f
     }
 
     public void render()
@@ -34,7 +41,10 @@ public class Radar
         ui.popMatrix();
         */
 
+<<<<<<< HEAD
        
+=======
+>>>>>>> de7e8069b669c806897000ef5780b728090c9d9f
         ui.fill(105,105,105);
         ui.rect(0,475, width,800);
         ui.stroke(0,255,0);

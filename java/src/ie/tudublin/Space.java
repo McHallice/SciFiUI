@@ -22,10 +22,9 @@ this.width = width;
 
 
 }
-    
-
 public void create(){
 
+<<<<<<< HEAD
 ui.fill (x,y);
 ui.stroke(0,0,0);
 ui.rect(x,x,height,width);
@@ -36,9 +35,18 @@ ui.ellipse(ui.random(height), ui.random(width),2,3);
 
 
 
+=======
+    ui.fill (x,y);
+    ui.stroke(0,0,0);
+    ui.rect(x,x,height,width);
+    ui.fill(255);
+    ui.noStroke();
+    ui.ellipse(ui.random(height), ui.random(width),2,3);
+    
+>>>>>>> de7e8069b669c806897000ef5780b728090c9d9f
 }
-
-
+    
+    
 
 
 

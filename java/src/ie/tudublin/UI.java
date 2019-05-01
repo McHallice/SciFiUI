@@ -35,17 +35,24 @@ public class UI extends PApplet
 
     public void setup()
     {
+<<<<<<< HEAD
         
         radar = new Radar(this, 1, 1100,600, 100,width);
         s = new Space(this,0, 5, width, height);
         ch = new Crosshair(this);
     
+=======
+       
+        radar = new Radar(this, 1, 1100,600, 100,width);
+        s = new Space(this,0, 2, width, height);
+>>>>>>> de7e8069b669c806897000ef5780b728090c9d9f
     }
 
     Radar radar;
 
     public void draw()
     {
+<<<<<<< HEAD
         radar.update();
         radar.render();
 
@@ -54,6 +61,11 @@ public class UI extends PApplet
 
         
         s.create();
+=======
+        s.create();
+        radar.update();
+        radar.render();
+>>>>>>> de7e8069b669c806897000ef5780b728090c9d9f
 
     
        
