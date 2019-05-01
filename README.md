@@ -1,6 +1,6 @@
 # SciFi UI Project
 
-Name:Ciara McHale
+Name: Ciaran McHale
 
 Student Number: C16486904
 
@@ -9,7 +9,7 @@ Suppose to be a view from a cockpit in a spaceship where you could shoot and mov
 
 # Instructions
 Using UP DOWN LEFT AND RIGHT was suppose to move crosshair
-Using FIRE button was suppose to let you shoot
+Pressing FIRE button was suppose to let you shoot
 
 # How it works
 Used different classes for the crosshair, button, radar and space which were constructed and called from the UI Class. All of it was run through the Main Class which called the UI CLass. The Space class generates random stars. The UI class checks if the keys have been pressed and if so the values were supposed to be changed to move the crosshair. The button class would have allowed a user to press the fire button to shoot projectiles.
