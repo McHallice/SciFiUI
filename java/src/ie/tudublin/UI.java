@@ -7,6 +7,7 @@ public class UI extends PApplet
     
     Space s;
     Crosshair ch;
+    Button b;
      float move = 500;
      float move2 = 750;
      float move3 = 200;
@@ -20,7 +21,38 @@ public class UI extends PApplet
 
     public void keyPressed()
     {
-        keys[keyCode] = true;
+        if (keyCode==LEFT)
+        {
+           move -= speed;
+           move2 -= speed;
+           move5 -= speed;
+           move6 -= speed;
+
+        }
+        if (keyCode==RIGHT)
+        {
+           move += speed;
+           move2 += speed;
+           move5 += speed;
+           move6 += speed;
+
+        }
+        if (keyCode==UP)
+        {
+           
+           move3 -= speed;
+           move4 -= speed;
+
+        }
+        if (keyCode==LEFT)
+        {
+           
+
+           move2 += speed;
+           move3 += speed;
+           
+
+        }
     }
     
     public void keyReleased()
@@ -43,7 +75,7 @@ public class UI extends PApplet
 
     public void setup()
     {
-        
+        b = new Button(this,625,600,100,50,"FIRE");
         radar = new Radar(this, 1, 1100,600, 100,width);
         s = new Space(this,0, 5, width, height);
         ch = new Crosshair(this,move,move2,move3,move4,move5,move6);
@@ -58,6 +90,7 @@ public class UI extends PApplet
     {
         radar.update();
         radar.render();
+        b.render();
 
         ch.render();
         
@@ -68,38 +101,7 @@ public class UI extends PApplet
 
     
        
-        if (checkKey(LEFT))
-        {
-           move -= speed;
-           move2 -= speed;
-           move5 -= speed;
-           move6 -= speed;
-
-        }
-        if (checkKey(RIGHT))
-        {
-           move += speed;
-           move2 += speed;
-           move5 += speed;
-           move6 += speed;
-
-        }
-        if (checkKey(UP))
-        {
-           
-           move3 -= speed;
-           move4 -= speed;
-
-        }
-        if (checkKey(DOWN))
-        {
-           
-
-           move2 += speed;
-           move3 += speed;
-           
-
-        }
+       
     }
 }
 
